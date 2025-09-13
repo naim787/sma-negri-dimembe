@@ -1,9 +1,37 @@
 <script>
-  import "../app.css"
-  import Nav from "$lib/components/Nav.svelte";
-  import { Carousel, Controls, Card, Button, Toggle } from "flowbite-svelte";
-  import { ArrowRightOutline, NewspaperSolid , HomeSolid , BookOpenSolid, MicroscopeSolid, EyeSolid, MoonSolid} from "flowbite-svelte-icons";
-  import Footer from "$lib/components/Footer.svelte";
+  import { onMount } from 'svelte';
+  import "../../app.css"
+  import { button, Gallery } from "flowbite-svelte";
+   import { Img } from "flowbite-svelte";
+  import Nav from '$lib/components/Nav.svelte';
+  import { CloseCircleOutline, CaretLeftSolid , CaretRightSolid} from 'flowbite-svelte-icons';
+
+  let visible = false;
+  let target; // DOM element yang mau di-observe
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+        visible = entry.isIntersecting;
+
+        if (entry.isIntersecting) {
+        console.log('🔵 Elemen MASUK viewport');
+        } else {
+        console.log('🔴 Elemen KELUAR dari viewport');
+        }
+      },
+      {
+        threshold: 0.5, // Elemen dianggap terlihat saat 50% masuk viewport
+      }
+    );
+
+    if (target) observer.observe(target);
+
+    return () => {
+      if (target) observer.unobserve(target);
+    };
+  });
 
 
   let images = [
@@ -68,82 +96,83 @@
       src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/469199900_1739052066638617_2429605381300887303_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Z4OFj9J-cJsQ7kNvwHcBfda&_nc_oc=Adm_83Tn4s4aEoVNP5DQKn9bk9WrmNev-QnnlWTdOD9blae6Ck0TujUwabbP9zSm-Uk&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=G3R9K-F5cr0EL9zOqCfg5w&oh=00_AfZ1BI66oZRyQC77TkHGOF1uKA-FmIkBaNG-h3Whh5wBAg&oe=68CB1F4B"
     },
   ];
+
+  let heigLight;
 </script>
+<!-- 
+    <style>
+        .spacer {
+    height: 150vh;
+  }
 
-<Nav />
-<div class="w-[100vw] h-auto pt-[7vh] overflow-hidden">
-    <div class="w-full h-auto flex flex-col justify-center items-center">
-        <div class="w-full mb-2">
-          <Carousel {images}  duration={4000}>
-            <Controls class="z-[-1px]" />
-          </Carousel>
-        </div>
-    </div>
-    
-    <div class="w-full h-auto p-4 gap-5 flex flex-col">
-        <div class="rounded-xl p-2 flex flex-col justify-center items-center my-10">
+  .box {
+    height: 200px;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+  }
 
-          <div class="flex flex-col">
-            <h1 class="text-6xl text-center">SMA NEGRI 1 DIMEMBE</h1>
-            <div class="w-130">
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus consequatur labore quaerat vero dignissimos quod explicabo in, facilis, ex reprehenderit hic ipsa rerum repellat quam voluptate nisi iure vitae ut. Delectus deleniti illum quae, doloremque quis inventore id neque veniam sunt magni voluptates commodi porro sint sapiente cumque exercitationem <span class="text-2xl p-2 rounded-2xl bg-blue-500 text-white">DAFTAR</span></p>
-            </div>
-          </div>
+  .hidden {
+    opacity: 0.3;
+  }
 
-          <div class="w-full h-50 flex items-center justify-evenly">
+  .visible {
+    opacity: 1;
+  }
+</style>
 
-            <div class="flex flex-col justify-center items-center">
-                <HomeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">15</p>
-                <p class="">ruang kelass</p>
-            </div>
+<div class="spacer">Scroll ke bawah...</div>
 
-            <div class="flex flex-col justify-center items-center">
-                <BookOpenSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Perpustakaan</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <MicroscopeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Lab Ipa</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <EyeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Lab Biologi</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <MoonSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Musola</p>
-            </div>
-
-          </div>
-        </div>
-        <div class="flex w-full justify-center items-center flex-col">
-            <div class="w-[80vw]">
-                <h1 class="text-2xl px-2 flex"><NewspaperSolid class="shrink-0 h-6 w-6" />Berita!!</h1>
-            </div>
-            <div class="w-full md:w-[80vw] overflow-x-auto flex gap-4">
-                
-                <Card img="https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/536281494_1941240256419796_6971615790000107311_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=vwCdVVFOpW8Q7kNvwEdDSKz&_nc_oc=AdnEoc93V1h83eyEYhh8wiiZUKyuJcvnrlXFEVIPGvzPXLd0u9kpZwvQHvmdIxxJNQI&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=8X_WF80bEhOVQrjckT3plg&oh=00_AfZmBD1PMp2kHS1-M9NQYX0KGDRby1L3tKx_yIJWc9_x6Q&oe=68CB288C">
-                    <div class="m-6">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kunjungan Kerja</h5>
-                    <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">Kunjungan Kerja  Tim Gugus Tugas Pembenahan Sistem dan Penelusuran Aset Pemerintah Provinsi Sulawesi Utara 
-                #Satu Komando</p>
-                    <Button class="w-40 bg-gray-400 hover:bg-orange-400">
-                        Lihat..
-                    </Button>
-                    </div>
-                </Card>
-                
-            </div>
-        </div>
-    </div>
+<div
+  class="box {visible ? 'visible' : 'hidden'}"
+  bind:this={target}
+>
+  {#if visible}
+    <p>Elemen terlihat</p>
+  {:else}
+    <p>Elemen tidak terlihat</p>
+  {/if}
 </div>
 
-<Footer />
+<div class="spacer"></div> -->
+<Nav />
+<div class="flex justify-evenly flex-wrap items-center gap-3 pt-24">
+  {#each images as img, index}
+    <div class="relative w-64 h-60 group overflow-hidden rounded-xl shadow-md">
+      <!-- Gambar -->
+      <img
+        src={img.src}
+        alt={img.alt}
+        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+
+      <!-- Tombol View (muncul saat hover) -->
+      <div
+        class="absolute inset-0 backdrop-blur-xl bg-opacity-50 text-white flex items-center justify-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      >
+      <button type="submit" class="py-2 px-4 rounded-xl bg-amber-300 font-bold cursor-pointer" on:click={() => {
+       heigLight = index
+      }}>Lihat</button>
+      </div>
+    </div>
+  {/each}
+</div>
+    <!-- <Gallery items={images} class="grid-cols-2 gap-4 md:grid-cols-3" /> -->
+{#if images[heigLight]}
+<div class="fixed top-0 left-0 z-50 backdrop-blur-2xl w-[100vw] h-[100vh] flex overflow-auto">
+    <Img src={images[heigLight].src} class="w-[80vw] h-auto bg-red-500 m-auto" />
+        <button class="absolute top-0 right-0 m-3" on:click={()=> {heigLight = null}}>
+            <CloseCircleOutline class="shrink-0 h-10 w-10 text-red-500" />
+        </button>
+        <button on:click={() => { if (heigLight > 0) heigLight -= 1}}>
+            <CaretLeftSolid class="shrink-0 h-10 w-10 absolute left-1 top-[50%]" />
+        </button>
+    
+        <button on:click={() => { if (heigLight < images.length - 1) heigLight += 1; }}>
+           <CaretRightSolid class="shrink-0 h-10 w-10 absolute right-1 top-[50%]" />
+        </button>
+
+</div>
+{/if}
