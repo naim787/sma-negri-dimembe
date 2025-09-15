@@ -5,6 +5,7 @@
    import { Img } from "flowbite-svelte";
   import Nav from '$lib/components/Nav.svelte';
   import { CloseCircleOutline, CaretLeftSolid , CaretRightSolid} from 'flowbite-svelte-icons';
+  import Footer from '$lib/components/Footer.svelte';
 
   let visible = false;
   let target; // DOM element yang mau di-observe
@@ -138,9 +139,12 @@
 
 <div class="spacer"></div> -->
 <Nav />
-<div class="flex justify-evenly flex-wrap items-center gap-3 pt-24">
+<div class="flex justify-evenly flex-wrap items-center gap-3 pt-24 py-2">
+  <!-- <div class="w-full h-20 border">
+
+  </div> -->
   {#each images as img, index}
-    <div class="relative w-64 h-60 group overflow-hidden rounded-xl shadow-md">
+    <div class="relative w-200 h-60 group overflow-hidden rounded-xl shadow-md">
       <!-- Gambar -->
       <img
         src={img.src}
@@ -149,12 +153,8 @@
       />
 
       <!-- Tombol View (muncul saat hover) -->
-      <div
-        class="absolute inset-0 backdrop-blur-xl bg-opacity-50 text-white flex items-center justify-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-      <button type="submit" class="py-2 px-4 rounded-xl bg-amber-300 font-bold cursor-pointer" on:click={() => {
-       heigLight = index
-      }}>Lihat</button>
+      <div class="absolute inset-0 backdrop-blur-xl bg-opacity-50 text-white flex items-center justify-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <button type="submit" class="py-2 px-4 rounded-xl bg-amber-300 font-bold cursor-pointer" on:click={() => {heigLight = index}}>Lihat</button>
       </div>
     </div>
   {/each}
@@ -163,16 +163,18 @@
 {#if images[heigLight]}
 <div class="fixed top-0 left-0 z-50 backdrop-blur-2xl w-[100vw] h-[100vh] flex overflow-auto">
     <Img src={images[heigLight].src} class="w-[80vw] h-auto bg-red-500 m-auto" />
-        <button class="absolute top-0 right-0 m-3" on:click={()=> {heigLight = null}}>
+        <button type="submit" class="absolute top-0 right-0 m-3" on:click={()=> {heigLight = null}}>
             <CloseCircleOutline class="shrink-0 h-10 w-10 text-red-500" />
         </button>
-        <button on:click={() => { if (heigLight > 0) heigLight -= 1}}>
+        <button type="submit" on:click={() => { if (heigLight > 0) heigLight -= 1}}>
             <CaretLeftSolid class="shrink-0 h-10 w-10 absolute left-1 top-[50%]" />
         </button>
     
-        <button on:click={() => { if (heigLight < images.length - 1) heigLight += 1; }}>
+        <button type="submit" on:click={() => { if (heigLight < images.length - 1) heigLight += 1; }}>
            <CaretRightSolid class="shrink-0 h-10 w-10 absolute right-1 top-[50%]" />
         </button>
 
 </div>
 {/if}
+
+<Footer />
