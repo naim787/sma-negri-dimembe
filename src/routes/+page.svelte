@@ -1,10 +1,11 @@
 <script>
   import "../app.css"
   import Nav from "$lib/components/Nav.svelte";
-  import { Carousel, Controls, Card, Button, Toggle } from "flowbite-svelte";
+  import { Carousel, Controls, Card, Button, Toggle, Blockquote  } from "flowbite-svelte";
   import { ArrowRightOutline, NewspaperSolid , HomeSolid , BookOpenSolid, MicroscopeSolid, EyeSolid, MoonSolid} from "flowbite-svelte-icons";
   import Footer from "$lib/components/Footer.svelte";
-
+  import L2 from "$lib/components/L2.svelte";
+  import L3 from "$lib/components/L3.svelte";
 
   let images = [
     {
@@ -58,20 +59,30 @@
       alt: "Cosmic timetraveler",
       src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/472211252_1759895184554305_488748505755511379_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=pqJSdg37EyEQ7kNvwH45dP6&_nc_oc=AdkaW4LbU0xHlajbolwe0oXKlCSHu8ntlifFhZOPh9vH062VssuhM4T8tm1bOpZDJfY&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=QSSgkCtKZttLS1ivRgFE8w&oh=00_AfaBmA-Z9TzFaVgD4kp47LzvIVGkkhId3YOd_dNoxrZZaw&oe=68CB13A3"
     },
+    {
+      alt: "Cosmic timetraveler",
+      src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/472211252_1759895184554305_488748505755511379_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=pqJSdg37EyEQ7kNvwH45dP6&_nc_oc=AdkaW4LbU0xHlajbolwe0oXKlCSHu8ntlifFhZOPh9vH062VssuhM4T8tm1bOpZDJfY&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=QSSgkCtKZttLS1ivRgFE8w&oh=00_AfaBmA-Z9TzFaVgD4kp47LzvIVGkkhId3YOd_dNoxrZZaw&oe=68CB13A3"
+    },
+    {
+      alt: "Cosmic timetraveler",
+      src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/497554580_9918485081552334_2526832024573034684_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8DkGsYylVegQ7kNvwF3tLb2&_nc_oc=AdnfGpsS_5W4TEkbC1BzEaBDYffrKMIniXDrTaw4C__SO5w35eDRko6dTdFqmQIhP0I&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=BOT8N17XN6_nXeVIGzpdFw&oh=00_AfZapBrFqLJZMu6JTHymaQSc1d0LXWvVrtSajKYWTzrY5A&oe=68CDDBC6"
+    },
     // ella akgkatan
-    {
-      alt: "Cosmic timetraveler",
-      src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/468821534_1739052859971871_4075296501577946518_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wr86IDck4zUQ7kNvwEU5s06&_nc_oc=AdmQkkQfwRkQfwuZZG-4cgY6fh-Xy0XMqCQwWF-mDMZl5pfDuNQf1MsqG6qwJrA31XU&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=huOh1P9PJLH4BGuyPcYFLg&oh=00_Afa5KqbKTTIdFGsYDSCoTfecL0z6YefYt9V2cfdqWFuDbw&oe=68CB0E24"
-    },
-    {
-      alt: "Cosmic timetraveler",
-      src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/469199900_1739052066638617_2429605381300887303_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Z4OFj9J-cJsQ7kNvwHcBfda&_nc_oc=Adm_83Tn4s4aEoVNP5DQKn9bk9WrmNev-QnnlWTdOD9blae6Ck0TujUwabbP9zSm-Uk&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=G3R9K-F5cr0EL9zOqCfg5w&oh=00_AfZ1BI66oZRyQC77TkHGOF1uKA-FmIkBaNG-h3Whh5wBAg&oe=68CB1F4B"
-    },
+    // {
+    //   alt: "Cosmic timetraveler",
+    //   src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/468821534_1739052859971871_4075296501577946518_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wr86IDck4zUQ7kNvwEU5s06&_nc_oc=AdmQkkQfwRkQfwuZZG-4cgY6fh-Xy0XMqCQwWF-mDMZl5pfDuNQf1MsqG6qwJrA31XU&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=huOh1P9PJLH4BGuyPcYFLg&oh=00_Afa5KqbKTTIdFGsYDSCoTfecL0z6YefYt9V2cfdqWFuDbw&oe=68CB0E24"
+    // },
+    // {
+    //   alt: "Cosmic timetraveler",
+    //   src: "https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/469199900_1739052066638617_2429605381300887303_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Z4OFj9J-cJsQ7kNvwHcBfda&_nc_oc=Adm_83Tn4s4aEoVNP5DQKn9bk9WrmNev-QnnlWTdOD9blae6Ck0TujUwabbP9zSm-Uk&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=G3R9K-F5cr0EL9zOqCfg5w&oh=00_AfZ1BI66oZRyQC77TkHGOF1uKA-FmIkBaNG-h3Whh5wBAg&oe=68CB1F4B"
+    // },
   ];
 </script>
 
 <Nav />
-<div class="w-[100vw] h-auto pt-[7vh] overflow-hidden">
+
+<div class="w-[100vw] h-auto pt-[7vh] lg:pt-[9vh] overflow-hidden">
+
     <div class="w-full h-auto flex flex-col justify-center items-center">
         <div class="w-full mb-2">
           <Carousel {images}  duration={4000}>
@@ -79,71 +90,12 @@
           </Carousel>
         </div>
     </div>
-    
-    <div class="w-full h-auto p-4 gap-5 flex flex-col">
-        <div class="rounded-xl p-2 flex flex-col justify-center items-center my-10">
 
-          <div class="flex flex-col">
-            <h1 class="text-6xl text-center">SMA NEGRI 1 DIMEMBE</h1>
-            <div class="w-130">
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus consequatur labore quaerat vero dignissimos quod explicabo in, facilis, ex reprehenderit hic ipsa rerum repellat quam voluptate nisi iure vitae ut. Delectus deleniti illum quae, doloremque quis inventore id neque veniam sunt magni voluptates commodi porro sint sapiente cumque exercitationem <span class="text-2xl p-2 rounded-2xl bg-blue-500 text-white">DAFTAR</span></p>
-            </div>
-          </div>
+    <!-- L2 -->
+     <L2 />
 
-          <div class="w-full h-50 flex items-center justify-evenly">
-
-            <div class="flex flex-col justify-center items-center">
-                <HomeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">15</p>
-                <p class="">ruang kelass</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <BookOpenSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Perpustakaan</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <MicroscopeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Lab Ipa</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <EyeSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Lab Biologi</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center">
-                <MoonSolid class="shrink-0 h-12 w-12 text-blue-300" />
-                <p class="text-4xl">1</p>
-                <p class="">Musola</p>
-            </div>
-
-          </div>
-        </div>
-        <div class="flex w-full justify-center items-center flex-col">
-            <div class="w-[80vw]">
-                <h1 class="text-2xl px-2 flex"><NewspaperSolid class="shrink-0 h-6 w-6" />Berita!!</h1>
-            </div>
-            <div class="w-full md:w-[80vw] overflow-x-auto flex gap-4">
-                
-                <Card img="https://scontent.fmdc6-1.fna.fbcdn.net/v/t39.30808-6/536281494_1941240256419796_6971615790000107311_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=vwCdVVFOpW8Q7kNvwEdDSKz&_nc_oc=AdnEoc93V1h83eyEYhh8wiiZUKyuJcvnrlXFEVIPGvzPXLd0u9kpZwvQHvmdIxxJNQI&_nc_zt=23&_nc_ht=scontent.fmdc6-1.fna&_nc_gid=8X_WF80bEhOVQrjckT3plg&oh=00_AfZmBD1PMp2kHS1-M9NQYX0KGDRby1L3tKx_yIJWc9_x6Q&oe=68CB288C">
-                    <div class="m-6">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kunjungan Kerja</h5>
-                    <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">Kunjungan Kerja  Tim Gugus Tugas Pembenahan Sistem dan Penelusuran Aset Pemerintah Provinsi Sulawesi Utara 
-                #Satu Komando</p>
-                    <Button class="w-40 bg-gray-400 hover:bg-orange-400">
-                        Lihat..
-                    </Button>
-                    </div>
-                </Card>
-                
-            </div>
-        </div>
-    </div>
+     <!-- L3 -->
+     <L3 />
 </div>
 
 <Footer />

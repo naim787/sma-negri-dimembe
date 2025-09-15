@@ -7,15 +7,15 @@
   let nonActiveClass = "text-black hover:bg-gray-200"; // default / saat tidak aktif
 </script>
 
-<Navbar class="bg-blue-100 fixed top-0 left-0 z-20 text-black">
+<Navbar class="bg-blue-800 fixed top-0 left-0 z-20 text-white shadow-2xl shadow-white/50">
   <NavBrand href="/">
     <img src="./favicon.webp" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
   </NavBrand>
   <NavHamburger />
   <NavUl {activeUrl } classes={{ active: activeClass, nonActive: nonActiveClass }}>
-    <NavLi href="/"><h1 class="text-black">Beranda</h1></NavLi>
-    <NavLi class="bg-yellow-300">
+    <NavLi class="text-black" href="/"><h1>Beranda</h1></NavLi>
+    <NavLi class="bg-yellow-300 ">
         Tentag Kami
         <ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
     </NavLi>
@@ -25,9 +25,9 @@
       <DropdownItem href="/">Profil Lulusan</DropdownItem>
       <DropdownItem href="/">Fasilitas</DropdownItem>
     </Dropdown>
-    <NavLi href="/settings">Program Sekolah</NavLi>
-    <NavLi href="/settings">Kurikulum</NavLi>
-    <NavLi href="/gallery">Gallery</NavLi>
-    <NavLi href="/contact">Kontak</NavLi>
+    <NavLi class="text-black" href="/settings">Program Sekolah</NavLi>
+    <NavLi class="text-black" href="/settings">Kurikulum</NavLi>
+    <NavLi class="text-black" href="/gallery">Gallery</NavLi>
+    <NavLi class="text-black" href="/contact">Kontak</NavLi>
   </NavUl>
 </Navbar>

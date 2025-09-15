@@ -3,6 +3,14 @@
 @plugin 'flowbite/plugin';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.gloria {
+font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 /* 
 @theme {
   --color-primary-50: #fff5f2;
