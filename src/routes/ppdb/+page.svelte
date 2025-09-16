@@ -1,0 +1,80 @@
+<script>
+	import NavvDash from './../../lib/components/NavvDash.svelte';
+  import Footer from "$lib/components/Footer.svelte";
+  import Nav from "$lib/components/Nav.svelte";
+  import "../../app.css";
+
+   import { AccordionItem, Accordion } from "flowbite-svelte";
+
+  import { onMount } from 'svelte';
+
+
+    //   cartjs
+    import chartjs from 'chart.js/auto';
+	let chartData;
+
+	let chartValues = [20, 10, 5, 2, 20, 30, 45];
+	let chartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+	let ctx;
+	let chartCanvas;
+
+/////////
+
+
+  let message = 'Memuat...';
+
+  onMount(async () => {
+    try {
+          ctx = chartCanvas.getContext('2d');
+			var chart = new chartjs(ctx, {
+				type: 'bar',
+				data: {
+						labels: chartLabels,
+						datasets: [{
+								label: 'Revenue',
+								// backgroundColor: 'rgb(255, 99, 132)',
+								// borderColor: 'rgb(255, 99, 132)',
+								data: chartValues
+						}]
+				}
+		});
+      const res = await fetch('/ppdb'); // Sama dengan lokasi folder
+      const result = await res.json();
+      message = result.message;
+    } catch (e) {
+      message = 'Gagal memuat';
+      console.error(e);
+    }
+  });
+</script>
+
+<!-- <Nav /> -->
+ <NavvDash />
+    <div class="w-full h-[90vh] flex bg-gray-200">
+        <!-- navbar -->
+        <div class="w-82 h-full bg-white flex justify-center items-start">
+            <ul class="w-[85%] h-2/3 p-2">
+                <Accordion flush>
+                    <AccordionItem>
+                        {#snippet header()}Guru & Staff{/snippet}
+                        <a href="/ppdb/berita" class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Berita</a>
+                    </AccordionItem>
+                    <AccordionItem>
+                        {#snippet header()}Layout{/snippet}
+                        <a class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Logo</a>
+                    </AccordionItem>
+                    <a href="/" class="w-full h-16 flex justify-start items-center text-gray-500">
+                        <h1 class="">Siswa</h1>
+                    </a>
+                </Accordion>
+            </ul>
+        </div>
+        <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
+         <div class="w-full bg-gray-200 flex flex-col justify-start items-start p-2">
+            <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
+            <div class="p-3 bg-white rounded-2xl">
+                <canvas bind:this={chartCanvas} id="myChart"></canvas>
+            </div>
+         </div>
+    </div>
+<Footer />
