@@ -4,7 +4,7 @@
 </script>
 
 <Footer footerType="sitemap">
-  <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4 bg-blue-950 dark:">
+  <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4 bg-blue-950 dark:bg">
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">JURUSAN</h2>
       <FooterLinkGroup class="text-white dark:text-gray-200">
