@@ -12,7 +12,6 @@
   </NavBrand>
   <button class="">
     <LayersSolid class="shrink-0 h-6 w-6 md:hidden" />
-
   </button>
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
