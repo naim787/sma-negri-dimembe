@@ -52,7 +52,7 @@
  <NavvDash />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
-        <div class="w-82 h-full bg-white flex justify-center items-start">
+        <!-- <div class="w-82 h-full bg-white flex justify-center items-start">
             <ul class="w-[85%] h-2/3 p-2">
                 <Accordion flush>
                     <AccordionItem>
@@ -68,7 +68,7 @@
                     </a>
                 </Accordion>
             </ul>
-        </div>
+        </div> -->
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
          <div class="w-full bg-gray-200 flex flex-col justify-start items-start p-2">
             <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
