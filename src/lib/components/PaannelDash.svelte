@@ -4,7 +4,7 @@
     export let Bars;
 </script>
 
-<div class={`w-82 h-full bg-white flex justify-center items-start lg:static absolute left-0 transform translate-3 ${Bars ? "" : "left-[-90%]"}`}>
+<div class={`w-82 h-full bg-white flex justify-center items-start lg:static absolute left-0 transform translate-3 `}>
             <ul class="w-[85%] h-2/3 p-2">
                 <Accordion flush>
                     <AccordionItem>
