@@ -34,8 +34,6 @@
 						labels: chartLabels,
 						datasets: [{
 								label: 'Revenue',
-								// backgroundColor: 'rgb(255, 99, 132)',
-								// borderColor: 'rgb(255, 99, 132)',
 								data: chartValues
 						}]
 				}
