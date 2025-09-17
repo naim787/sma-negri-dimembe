@@ -20,7 +20,7 @@
 	let chartCanvas;
 
 /////////
-  let Bars = flase
+  let Bars = false;
 
 
   let message = 'Memuat...';
