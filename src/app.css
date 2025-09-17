@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  /* Saat dark mode aktif */
+  .dark h1, .dark p {
+    @apply text-white;
+  }
+}
+
+
 .gloria {
 font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
