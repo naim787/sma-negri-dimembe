@@ -55,13 +55,13 @@
        <PaannelDash Bars={Bars} />
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
          <button class="">
-          
+           <div class="w-full bg-gray-200 dark:bg-black flex flex-col justify-start items-start p-2">
+              <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
+              <div class="p-3 bg-white rounded-2xl">
+                  <canvas bind:this={chartCanvas} id="myChart"></canvas>
+              </div>
+           </div>
+
          </button>
-         <div class="w-full bg-gray-200 dark:bg-black flex flex-col justify-start items-start p-2">
-            <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
-            <div class="p-3 bg-white rounded-2xl">
-                <canvas bind:this={chartCanvas} id="myChart"></canvas>
-            </div>
-         </div>
     </div>
 <Footer />
