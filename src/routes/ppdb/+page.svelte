@@ -10,7 +10,7 @@
 
 
     //   cartjs
-    import chartjs from 'chart.js/auto';
+  import chartjs from 'chart.js/auto';
   import PaannelDash from '$lib/components/PaannelDash.svelte';
 	let chartData;
 
