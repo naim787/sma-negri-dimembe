@@ -61,7 +61,6 @@
                   <canvas bind:this={chartCanvas} id="myChart"></canvas>
               </div>
            </div>
-
          </button>
     </div>
 <Footer />
