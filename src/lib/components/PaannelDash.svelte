@@ -1,7 +1,7 @@
 <script>
 	import { AccordionItem } from 'flowbite-svelte';
 	import { Accordion } from 'flowbite-svelte';
-    import let Bars;
+    export let Bars;
 </script>
 
 <div class={`w-82 h-full bg-white flex justify-center items-start lg:static absolute ${Bars ? "left-[90%]" : "left-0"}`}>
