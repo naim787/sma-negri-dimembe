@@ -10,6 +10,7 @@
     <img src="./favicon.webp" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
   </NavBrand>
+  
   <LayersSolid class="shrink-0 h-6 w-6 md:hidden" />
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
