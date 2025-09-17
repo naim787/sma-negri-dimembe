@@ -4,9 +4,9 @@
   import Nav from "$lib/components/Nav.svelte";
   import "../../app.css";
 
-   import { AccordionItem, Accordion } from "flowbite-svelte";
+  import { AccordionItem, Accordion } from "flowbite-svelte";
 
-  import { onMount } from 'svelte';
+import { onMount } from 'svelte';
 
 /////////
   let Bars = true;
