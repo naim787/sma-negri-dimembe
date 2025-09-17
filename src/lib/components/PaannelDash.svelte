@@ -1,7 +1,7 @@
 <script>
 	import { AccordionItem } from 'flowbite-svelte';
 	import { Accordion } from 'flowbite-svelte';
-    export let 
+    export let Ba
 </script>
 
 <div class="w-82 h-full bg-white flex justify-center items-start lg:static absolute left-[-90%]">
