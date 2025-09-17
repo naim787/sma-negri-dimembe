@@ -59,7 +59,6 @@
   tabindex="0"
   on:click={() => Bars = true}
   on:keypress={(e) => { if (e.key === 'Enter') Bars = true; }}
-
          >
             <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
             <div class="p-3 bg-white rounded-2xl">
