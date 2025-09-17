@@ -6,8 +6,6 @@
 
   import { AccordionItem, Accordion } from "flowbite-svelte";
 
-  import { onMount } from 'svelte';
-
 /////////
   let Bars = true;
 
