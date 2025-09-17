@@ -51,7 +51,7 @@
 </script>
 
 <!-- <Nav /> -->
- <NavvDash on:panelDash={() => {Bars = t}} />
+ <NavvDash on:panelDash={() => {Bars = true}} />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
        <PaannelDash />
