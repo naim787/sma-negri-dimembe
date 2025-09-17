@@ -7,8 +7,7 @@
   const dispatch = createEventDispatcher();
   let activeUrl = $derived(page.url.pathname);
 </script>
-
-<Navbar class="border-b-1 border-gray-300 dark:bg-gray-900 ">
+00 ">
   <NavBrand href="/">
     <img src="./favicon.webp" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
