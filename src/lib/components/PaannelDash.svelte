@@ -6,6 +6,7 @@
     import { DarkMode } from "flowbite-svelte";
 </script>
 
+
 <div class={`w-82 h-full bg-white dark:bg-gray-800 flex justify-center items-start md:static absolute left-0 md:translate-none md:transform-none transform transition-transform duration-300 ease-in-out ${Bars ? "translate-x-[-100%]" : "translate-x-[0%]"} `}>
             <ul class="w-[85%] h-2/3 p-2">
                 <Accordion flush>
