@@ -51,7 +51,7 @@
 <!-- <Nav /> -->
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
    <button class="w-full" on:click={()=> Bars = !Bars}>
-     <div class="w-full h-[90vh] flex bg-gray-200">
+     <div class="h-[90vh] flex bg-gray-200">
          <!-- navbar -->
         <PaannelDash Bars={Bars} />
          <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
