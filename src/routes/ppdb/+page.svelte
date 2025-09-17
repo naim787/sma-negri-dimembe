@@ -38,7 +38,7 @@
 						}]
 				}
 		});
-      const res = await fetch('/ppdb'); // Sama dengan lokasi folder
+      const res = await fetch('/ppdb');
       const result = await res.json();
       message = result.message;
     } catch (e) {
