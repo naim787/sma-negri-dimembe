@@ -17,7 +17,7 @@
 	let chartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 	let ctx;
 	let chartCanvas;
-
+Pannel
 /////////
 
 
