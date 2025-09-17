@@ -50,7 +50,7 @@
 
 <!-- <Nav /> -->
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
-   <button class="w-full" on:click={()=> Bars = }>
+   <button class="w-full" on:click={()=> Bars = true}>
      <div class="h-[90vh] flex bg-gray-200">
          <!-- navbar -->
         <PaannelDash Bars={Bars} />
