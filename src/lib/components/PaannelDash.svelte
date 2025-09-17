@@ -3,7 +3,7 @@
 	import { Accordion } from 'flowbite-svelte';
 </script>
 
-<div class="w-82 h-full bg-white flex justify-center items-start absolute left-[-0%]">
+<div class="w-82 h-full bg-white flex justify-center items-start absolute left-[-90%]">
             <ul class="w-[85%] h-2/3 p-2">
                 <Accordion flush>
                     <AccordionItem>
