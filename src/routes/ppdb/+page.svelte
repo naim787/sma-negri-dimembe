@@ -8,17 +8,6 @@
 
   import { onMount } from 'svelte';
 
-
-    //   cartjs
-  import chartjs from 'chart.js/auto';
-  import PaannelDash from '$lib/components/PaannelDash.svelte';
-	let chartData;
-
-	let chartValues = [20, 10, 5, 2, 20, 30, 45];
-	let chartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-	let ctx;
-	let chartCanvas;
-
 /////////
   let Bars = true;
 
