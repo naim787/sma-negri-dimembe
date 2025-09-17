@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/state";
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
+  import { LayersSolid } from "flowbite-svelte-icons";
   let activeUrl = $derived(page.url.pathname);
 </script>
 
@@ -10,7 +11,7 @@
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
   </NavBrand>
   <LayersSolid class="shrink-0 h-6 w-6" />
-  <Layer
+  <LayersSolid
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
     <NavLi href="/docs/components/navbar">Navbar</NavLi>
