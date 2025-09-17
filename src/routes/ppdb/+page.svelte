@@ -49,7 +49,7 @@
 </script>
 
 <!-- <Nav /> -->
- <NavvDash on:panelDash={() => {Bars = !Bars}} />
+ <NavvDash on:panelDash={() => {Bars = }} />
    <button class="w-full" on:click={()=> Bars = !Bars}>
      <div class="h-[90vh] flex bg-gray-200">
          <!-- navbar -->
