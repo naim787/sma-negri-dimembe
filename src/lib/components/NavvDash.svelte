@@ -8,7 +8,7 @@
   let activeUrl = $derived(page.url.pathname);
 </script>
 
-<Navbar class="border-b-1 dak:border-white/20 shadow-2xl shadow-white/15 dark:bg-gray-800 ">
+<Navbar class="border-b-1 dark:border-white/20 shadow-2xl shadow-white/15 dark:bg-gray-800 ">
   <NavBrand href="/">
     <img src="./favicon.webp" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
