@@ -11,9 +11,9 @@
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
   </NavBrand>
   <button class="">
-    
+    <LayersSolid class="shrink-0 h-6 w-6 md:hidden" />
+
   </button>
-  <LayersSolid class="shrink-0 h-6 w-6 md:hidden" />
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
     <NavLi href="/docs/components/navbar">Navbar</NavLi>
