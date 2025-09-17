@@ -49,7 +49,7 @@
 </script>
 
 <!-- <Nav /> -->
- <NavvDash on:panelDash={() => {Bars = true}} />
+ <NavvDash on:panelDash={() => {Bars = }} />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
        <PaannelDash Bars={Bars} />
