@@ -1,4 +1,5 @@
 <script>
+	import { AccordionItem } from 'flowbite-svelte';
 	import { Accordion } from 'flowbite-svelte';
 </script>
 
@@ -16,7 +17,7 @@
                     <a href="/" class="w-full h-16 flex justify-start items-center text-gray-500">
                         <h1 class="">Siswa</h1>
                     </a>
-                    Acc
+                    AccordionItem
                 </Accordion>
             </ul>
 </div>
