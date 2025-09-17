@@ -62,7 +62,7 @@
          >
             <div class="w-full p-3"><h1 class="text-4xl font-bold gloria ">Dashbord</h1></div>
             <div class="p-3 bg-white rounded-2xl">
-                <canvas bind:this={chartCanvas} id="myChart"></canvas>
+          
             </div>
          </div>
     </div>
