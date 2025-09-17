@@ -27,17 +27,6 @@
 
   onMount(async () => {
     try {
-          ctx = chartCanvas.getContext('2d');
-			var chart = new chartjs(ctx, {
-				type: 'bar',
-				data: {
-						labels: chartLabels,
-						datasets: [{
-								label: 'Revenue',
-								data: chartValues
-						}]
-				}
-		});
       const res = await fetch('/ppdb');
       const result = await res.json();
       message = result.message;
