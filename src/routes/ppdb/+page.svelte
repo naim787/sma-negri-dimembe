@@ -15,12 +15,6 @@
 </script>
 
 
-
-
-
-
-
-
 <!-- <Nav /> -->
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
     <div class="w-full h-[90vh] flex bg-gray-200">
