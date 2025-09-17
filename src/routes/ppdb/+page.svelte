@@ -50,7 +50,7 @@
 
 <!-- <Nav /> -->
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
-    <div class="w-full h-[90vh] flex bg-gray-200 datk:text-white text">
+    <div class="w-full h-[90vh] flex bg-gray-200 datk:text-white text-w">
         <!-- navbar -->
        <PaannelDash Bars={Bars} />
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
