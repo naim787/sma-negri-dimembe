@@ -54,7 +54,7 @@
         <!-- navbar -->
        <PaannelDash Bars={Bars} />
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
-         <div class="w-full bg-gray-200 dark:bg- flex flex-col justify-start items-start p-2"
+         <div class="w-full bg-gray-200 dark:bg-800 flex flex-col justify-start items-start p-2"
           role="button"
           tabindex="0"
           on:click={() => Bars = true}
