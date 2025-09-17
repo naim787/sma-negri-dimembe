@@ -3,9 +3,9 @@
   import Footer from "$lib/components/Footer.svelte";
   import Nav from "$lib/components/Nav.svelte";
   import "../../app.css";
+  import PaannelDash from '$lib/components/PaannelDash.svelte';
 
   import { AccordionItem, Accordion } from "flowbite-svelte";
-  import PaannelDash from '$lib/components/PaannelDash.svelte';
 
 /////////
   let Bars = true;
