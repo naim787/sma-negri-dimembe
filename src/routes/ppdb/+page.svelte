@@ -51,10 +51,10 @@
 <!-- <Nav /> -->
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
     <div class="w-full h-[90vh] flex bg-gray-200"  role="button"
-  tabindex="0"
-  on:click={() => Bars = true}
-  on:keypress={(e) => { if (e.key === 'Enter') Bars = true; }}
->
+      tabindex="0"
+      on:click={() => Bars = true}
+      on:keypress={(e) => { if (e.key === 'Enter') Bars = true; }}
+    >
         <!-- navbar -->
        <PaannelDash Bars={Bars} />
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
