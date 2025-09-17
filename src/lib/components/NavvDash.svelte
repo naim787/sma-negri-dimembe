@@ -14,7 +14,7 @@
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
   </NavBrand>
   <button class="p-2 bg-gray-400 rounded-md" on:click={() => {dispatch('panelDash');}}>
-    <LayersSolid class="shrink-0 h-6 w-6 md:hidden" />
+    <LayersSolid class="shrink-0 h-6 w-6" />
   </button>
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
