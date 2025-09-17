@@ -52,7 +52,6 @@
  <NavvDash on:panelDash={() => {Bars = !Bars}} />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
-        <button class=""></button>
        <PaannelDash Bars={Bars} />
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
          <div class="w-full bg-gray-200 dark:bg-black flex flex-col justify-start items-start p-2">
