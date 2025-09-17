@@ -50,7 +50,7 @@
 </script>
 
 <!-- <Nav /> -->
- <NavvDash />
+ <NavvDash on />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
        <PaannelDash />
