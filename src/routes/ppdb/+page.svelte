@@ -13,17 +13,6 @@
 
 
   let message = 'Memuat...';
-
-  onMount(async () => {
-    try {
-      const res = await fetch('/ppdb');
-      const result = await res.json();
-      message = result.message;
-    } catch (e) {
-      message = 'Gagal memuat';
-      console.error(e);
-    }
-  });
 </script>
 
 <!-- <Nav /> -->
