@@ -18,7 +18,7 @@
 	let chartLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 	let ctx;
 	let chartCanvas;
-  
+
 /////////
 
 
@@ -53,7 +53,7 @@
  <NavvDash />
     <div class="w-full h-[90vh] flex bg-gray-200">
         <!-- navbar -->
-       
+       <Pan
         <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
          <div class="w-full bg-gray-200 flex flex-col justify-start items-start p-2">
             <div class="w-full p-3"><h1 class="text-4xl font-bold gloria">Dashbord</h1></div>
