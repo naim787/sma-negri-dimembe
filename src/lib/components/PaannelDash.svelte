@@ -14,6 +14,7 @@
                         <a href="/ppdb/berita" class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Berita</a>
                     </AccordionItem>
                     <AccordionItem>
+                        
                         {#snippet header()}Layout{/snippet}
                         <a class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Logo</a>
                     </AccordionItem>
