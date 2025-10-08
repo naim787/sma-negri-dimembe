@@ -29,6 +29,7 @@
     <NavLi class="text-black" href="/maintenance">Kurikulum</NavLi>
     <NavLi class="text-black" href="/gallery">Gallery</NavLi>
     <NavLi class="text-black" href="/maintenance">Kontak</NavLi>
+    <NavLi class="text-black bg-white font-bold" href="/ppdb">PPDB</NavLi>
     <!-- <NavLi class="text-black p-3 bg-yellow-500" href="/ppdb">PPDB</NavLi> -->
   </NavUl>
 </Navbar>
