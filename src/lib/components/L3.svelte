@@ -1,6 +1,6 @@
 <script>
   import { Group, GroupItem } from "flowbite-svelte";
-  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid,  PersonChalkboardSolid,  EggSolid } from "flowbite-svelte-icons";
+  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid,  EggSolid,  FilterSolid, BookOpenSolid} from "flowbite-svelte-icons";
   let groupTimelines = [
     {
       title: '<span class="font-medium text-gray-900 dark:text-white">Jese Leos</span> likes <span class="font-medium text-gray-900 dark:text-white">Bonnie Green\'s</span> post in <span class="font-medium text-gray-900 dark:text-white"> How to start with Flowbite library</span>',
@@ -37,19 +37,19 @@
     <div class="w-full h-auto bg-blue-100 px-2 py-10 flex flex-wrap justify-evenly items-center gap-1">
       <div class="w-full"><h1 class="text-5xl text-center gloria">RUANGGAN</h1></div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-            <ChalkboardUserSolid class="shrink-0 h-15 w-15" />
+            <ChalkboardUserSolid class="shrink-0 h-15 w-15 text-white" />
             <h1 class="text-2xl text-white">RUAG KELASS 15</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-            <LifeSaverSolid class="shrink-0 h-15 w-15 text-indigo-500" />
-            <h1 class="text-2xl text-white">LABORATORIUM 3</h1>
+          <FilterSolid class="shrink-0 h-15 w-15 text-white" />
+          <h1 class="text-2xl text-white">LABORATORIUM 3</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-           <PersonChalkboardSolid class="shrink-0 h-6 w-6" />
-            <h1 class="text-2xl text-white">PERPUSTAKAAN 1</h1>
+          <BookOpenSolid class="shrink-0 h-15 w-15 text-white" />
+          <h1 class="text-2xl text-white">PERPUSTAKAAN 1</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-           <EggSolid class="shrink-0 h-6 w-6" />
+           <EggSolid class="shrink-0 h-15 w-15 text-white" />
             <h1 class="text-2xl text-white">SANITASI 9</h1>
         </div>
     </div>
