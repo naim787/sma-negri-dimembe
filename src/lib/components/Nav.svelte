@@ -21,7 +21,7 @@
     </NavLi>
     <Dropdown simple class="w-44">
       <DropdownItem href="/maintenance">Sejarah</DropdownItem>
-      <DropdownItem href="/maintenance">Visi & Misi</DropdownItem>
+      <DropdownItem href="/visimisi">Visi & Misi</DropdownItem>
       <DropdownItem href="/maintenance">Profil Lulusan</DropdownItem>
       <DropdownItem href="/maintenance">Fasilitas</DropdownItem>
     </Dropdown>
