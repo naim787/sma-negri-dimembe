@@ -5,8 +5,8 @@
 </script>
 
 <Nav />
-    <div class="w-[100vw] h-[100vh] p-4 lg:pt-[9vh]">
-      <div class="w-full h-full mt-2">
+    <div class="w-[100vw] h-auto p-4 lg:pt-[9vh]">
+      <div class="w-full h-full mt-5">
         <h1 class="text-5xl font-bold">Visi</h1>
         <p class="">
             Menjadi lembaga pendidikan menengah yang unggul, inklusif, dan berwawasan kebangsaan — yang menghasilkan lulusan unggul, berkarakter, kreatif, berdaya saing global, serta berkontribusi nyata bagi kemajuan masyarakat dan pembangunan berkelanjutan di tingkat lokal, nasional, dan internasional. SMA Negeri Dimembe berkomitmen menjadi pusat pembelajaran yang memadukan kecakapan akademik dan keterampilan abad ke-21, memupuk jiwa kewirausahaan, kepekaan sosial, dan tanggung jawab lingkungan. Melalui pembelajaran berbasis nilai, inovasi pedagogis, dan kolaborasi dengan keluarga serta pemangku kepentingan, sekolah bertujuan mencetak pemimpin masa depan yang berintegritas, adaptif terhadap perubahan, berwawasan teknologi, serta menjunjung tinggi budaya dan kearifan lokal.
