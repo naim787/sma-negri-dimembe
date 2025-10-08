@@ -41,6 +41,14 @@
             <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Kemandirian</p>
             <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Kebanggaan Lokal</p>
         </div>
+        <h1 class="text-5xl font-bold">Motto / Tagline</h1>
+        <div class="w-full h-auto flex flex-wrap gap-2 p-2">
+            <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Unggul</p>
+            <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Berkarakter</p>
+            <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Berdaya Saing</p>
+            <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Berkreasi</p>
+            <p class="w-auto h-8 bg-yellow-500 rounded-md p-1">Berkontribusi</p>
+        </div>
     </div>   
     </div>
 <Footer />
