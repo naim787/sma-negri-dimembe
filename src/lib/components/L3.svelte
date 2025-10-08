@@ -1,6 +1,6 @@
 <script>
   import { Group, GroupItem } from "flowbite-svelte";
-  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid } from "flowbite-svelte-icons";
+  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid,  PersonChalkboardSolid } from "flowbite-svelte-icons";
   let groupTimelines = [
     {
       title: '<span class="font-medium text-gray-900 dark:text-white">Jese Leos</span> likes <span class="font-medium text-gray-900 dark:text-white">Bonnie Green\'s</span> post in <span class="font-medium text-gray-900 dark:text-white"> How to start with Flowbite library</span>',
@@ -35,22 +35,22 @@
         </div>
     </div>
     <div class="w-full h-auto bg-blue-100 px-2 py-10 flex flex-wrap justify-evenly items-center gap-1">
-      <div class="w-full"><h1 class="text-5xl text-center gloria">Extrakurikuler</h1></div>
+      <div class="w-full"><h1 class="text-5xl text-center gloria">RUANGGAN</h1></div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-            <DribbbleSolid class="shrink-0 h-15 w-15 text-yellow-500" />
-            <h1 class="text-2xl text-white">Bola Folly</h1>
+            <ChalkboardUserSolid class="shrink-0 h-15 w-15" />
+            <h1 class="text-2xl text-white">RUAG KELASS 15</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
             <LifeSaverSolid class="shrink-0 h-15 w-15 text-indigo-500" />
-            <h1 class="text-2xl text-white">Bola Kaki</h1>
+            <h1 class="text-2xl text-white">LABORATORIUM 3</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-            <CandyCaneSolid class="shrink-0 h-15 w-15 text-red-500" />
-            <h1 class="text-2xl text-white">Teater</h1>
+           <PersonChalkboardSolid class="shrink-0 h-6 w-6" />
+            <h1 class="text-2xl text-white">PERPUSTAKAAN 1</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
             <MicrophoneSolid class="shrink-0 h-15 w-15 text-green-500" />
-            <h1 class="text-2xl text-white">Menyayi</h1>
+            <h1 class="text-2xl text-white">SANITASI 9</h1>
         </div>
     </div>
     <div class="m-auto w-120 md:w-[40vw] p-2">
