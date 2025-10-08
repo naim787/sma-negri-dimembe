@@ -38,19 +38,19 @@
       <div class="w-full"><h1 class="text-5xl text-center gloria">RUANGGAN</h1></div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
             <ChalkboardUserSolid class="shrink-0 h-15 w-15 text-white" />
-            <h1 class="text-2xl text-white">RUAG KELASS 15</h1>
+            <h1 class="text-2xl text-white"> RUAG KELASS 15</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
           <FilterSolid class="shrink-0 h-15 w-15 text-white" />
-          <h1 class="text-2xl text-white">LABORATORIUM 3</h1>
+          <h1 class="text-2xl text-white"> LABORATORIUM 3</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
           <BookOpenSolid class="shrink-0 h-15 w-15 text-white" />
-          <h1 class="text-2xl text-white">PERPUSTAKAAN 1</h1>
+          <h1 class="text-2xl text-white"> PERPUSTAKAAN 1</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
            <EggSolid class="shrink-0 h-15 w-15 text-white" />
-            <h1 class="text-2xl text-white">SANITASI 9</h1>
+            <h1 class="text-2xl text-white"> SANITASI 9</h1>
         </div>
     </div>
     <div class="m-auto w-120 md:w-[40vw] p-2">
