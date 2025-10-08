@@ -1,6 +1,6 @@
 <script>
   import { Group, GroupItem } from "flowbite-svelte";
-  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid,  PersonChalkboardSolid } from "flowbite-svelte-icons";
+  import { BullhornSolid, CandyCaneSolid, ChalkboardUserSolid, DribbbleSolid, GlobeSolid, LifeSaverSolid, MicrophoneSolid,  PersonChalkboardSolid,  EggSolid } from "flowbite-svelte-icons";
   let groupTimelines = [
     {
       title: '<span class="font-medium text-gray-900 dark:text-white">Jese Leos</span> likes <span class="font-medium text-gray-900 dark:text-white">Bonnie Green\'s</span> post in <span class="font-medium text-gray-900 dark:text-white"> How to start with Flowbite library</span>',
@@ -49,7 +49,7 @@
             <h1 class="text-2xl text-white">PERPUSTAKAAN 1</h1>
         </div>
         <div class="w-full h-30 rounded-xl bg-blue-950 flex items-center justify-center">
-            <MicrophoneSolid class="shrink-0 h-15 w-15 text-green-500" />
+           <EggSolid class="shrink-0 h-6 w-6" />
             <h1 class="text-2xl text-white">SANITASI 9</h1>
         </div>
     </div>
